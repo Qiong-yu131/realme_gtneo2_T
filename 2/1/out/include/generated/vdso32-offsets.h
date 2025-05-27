@@ -1,0 +1,4 @@
+#define vdso_offset_compat_rt_sigreturn_arm	0x0944
+#define vdso_offset_compat_rt_sigreturn_thumb	0x0958
+#define vdso_offset_compat_sigreturn_arm	0x0938
+#define vdso_offset_compat_sigreturn_thumb	0x0950
