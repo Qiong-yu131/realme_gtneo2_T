@@ -11,5 +11,5 @@ export CROSS_COMPILE_COMPAT=arm-linux-androidkernel-
 export CC=clang
 make ARCH=arm64 CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-androidkernel- CROSS_COMPILE_COMPAT=arm-linux-androidkernel- CC=clang O=out vendor/kona_defconfig
 
-make -j24 ARCH=arm64 CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-androidkernel- CROSS_COMPILE_COMPAT=arm-linux-androidkernel- CC=clang O=out
+make -j24 ARCH=arm64 CLANG_TRIPLE=aarch64-linux-gnu- DTB_EXT=dtc CROSS_COMPILE=aarch64-linux-androidkernel- CROSS_COMPILE_COMPAT=arm-linux-androidkernel- CC=clang O=out 
 
