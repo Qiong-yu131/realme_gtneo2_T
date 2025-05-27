@@ -120,6 +120,7 @@ deps_config := \
 	fs/oext4/Kconfig \
 	fs/ext2/Kconfig \
 	fs/Kconfig \
+	drivers/kernelsu/Kconfig \
 	drivers/nfc/p73-spi/Kconfig \
 	drivers/nfc/pn553-i2c/Kconfig \
 	drivers/energy_model/Kconfig \

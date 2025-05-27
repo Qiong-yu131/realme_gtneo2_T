@@ -18,7 +18,7 @@ config KSU_DEBUG
 config KSU_MANUAL_HOOK
 	bool "Manual hooking GKI kernels without kprobes"
 	depends on KSU && KSU != m
-	default n
+	default y
 	help
 	  If enabled, Hook required KernelSU syscalls with manually-patched function.
 	  If disabled, Hook required KernelSU syscalls with Kernel-probe.
@@ -42,7 +42,7 @@ config KSU_CMDLINE
 config KPM
 	  bool "Enable SukiSU KPM"
 	  depends on KSU && 64BIT
-	  default n
+	  default y
 	  help
 	    Enabling this option will activate the KPM feature of SukiSU.
 	    This option is suitable for scenarios where you need to force KPM to be enabled.
